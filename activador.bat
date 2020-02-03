@@ -131,14 +131,14 @@ goto :Principal
 	SET EDU=%ERRORLEVEL%
 	IF %EDU% EQU 1 (
 	Echo Procederemos a introducir la clave de edicion Education.
-	cscript //nologo slmgr /ipk NW6C2-QMPVW-D7KKK-3GKT6-VCFB2 >nul&pause
+	slmgr /ipk NW6C2-QMPVW-D7KKK-3GKT6-VCFB2
 	goto :ACTIVATION
 	pause
 	goto :Process
 	)
 	IF %EDU% EQU 2 (
 	Echo Procederemos a introducir la clave de edicion Education N.
-	cscript //nologo slmgr /ipk 2WH4N-8QGBV-H22JP-CT43Q-MDWWJ >nul&pause
+	slmgr /ipk 2WH4N-8QGBV-H22JP-CT43Q-MDWWJ
 	goto :ACTIVATION
 	pause
 	goto :Process
@@ -165,32 +165,32 @@ goto :Principal
 	SET PRO=%ERRORLEVEL%
 	IF %PRO% EQU 1 (
 	Echo Procederemos a introducir la clave de edicion Pro .
-	cscript //nologo slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX >nul&pause
+	slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
 	goto :ACTIVATIONWINDOWS
 	)
 	IF %PRO% EQU 2 (
 	Echo Procederemos a introducir la clave de edicion Pro N.
-	cscript //nologo slmgr /ipk MH37W-N47XK-V7XM9-C7227-GCQG9 >nul&pause
+	slmgr /ipk MH37W-N47XK-V7XM9-C7227-GCQG9
 	goto :ACTIVATION
 	)
 	IF %PRO% EQU 3 (
 	Echo Procederemos a introducir la clave de edicion Pro Education.
-	cscript //nologo slmgr /ipk 6TP4R-GNPTD-KYYHQ-7B7DP-J447Y >nul&pause
+	slmgr /ipk 6TP4R-GNPTD-KYYHQ-7B7DP-J447Y
 	goto :ACTIVATION
 	)
 	IF %PRO% EQU 4 (
 	Echo Procederemos a introducir la clave de edicion Pro Education N.
-	cscript //nologo slmgr /ipk YVWGF-BXNMC-HTQYQ-CPQ99-66QFC >nul&pause
+	slmgr /ipk YVWGF-BXNMC-HTQYQ-CPQ99-66QFC
 	goto :ACTIVATION
 	)
 	IF %PRO% EQU 5 (
 	Echo Procederemos a introducir la clave de edicion Pro para Workstations.
-	cscript //nologo slmgr /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J >nul&pause
+	slmgr /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J
 	goto :ACTIVATION
 	)
 	IF %PRO% EQU 6 (
 	Echo Procederemos a introducir la clave de edicion Pro para Workstations N.
-	cscript //nologo slmgr /ipk 9FNHH-K3HBT-3W4TD-6383H-6XYWF >nul&pause
+	slmgr /ipk 9FNHH-K3HBT-3W4TD-6383H-6XYWF
 	goto :ACTIVATION
 	)	
 	IF %PRO% EQU 7 (
@@ -214,27 +214,27 @@ goto :Principal
 	SET ENTERP=%ERRORLEVEL%
 	IF %ENTERP% EQU 1 (
 	Echo Procederemos a introducir la clave de edicion para Enterprise.
-	cscript //nologo slmgr /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43 >nul&pause
+	slmgr /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
 	goto :ACTIVATION
 	)
 	IF %ENTERP% EQU 2 (
 	Echo Procederemos a introducir la clave de edicion para Enterprise N.
-	cscript //nologo slmgr /ipk DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4 >nul&pause
+	slmgr /ipk DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
 	goto :ACTIVATION
 	)
 	IF %ENTERP% EQU 3 (
 	Echo Procederemos a introducir la clave de edicion para Enterprise G.
-	cscript //nologo slmgr /ipk YYVX9-NTFWV-6MDM3-9PT4T-4M68B >nul&pause
+	slmgr /ipk YYVX9-NTFWV-6MDM3-9PT4T-4M68B
 	goto :ACTIVATION
 	)
 	IF %ENTERP% EQU 4 (
 	Echo Procederemos a introducir la clave de edicion para Enterprise G N.
-	cscript //nologo slmgr /ipk 44RPN-FTY23-9VTTB-MP9BX-T84FV >nul&pause
+	slmgr /ipk 44RPN-FTY23-9VTTB-MP9BX-T84FV
 	goto :ACTIVATION
 	)
 	IF %ENTERP% EQU 5 (
 	Echo Procederemos a introducir la clave de edicion para Enterprise LTSC.
-	cscript //nologo slmgr /ipk M7XTQ-FN8P6-TTKYV-9D4CC-J462D >nul&pause
+	slmgr /ipk M7XTQ-FN8P6-TTKYV-9D4CC-J462D
 	goto :ACTIVATION
 	)
 	IF %ENTERP% EQU 6 (
@@ -291,22 +291,19 @@ IF %WINSERVEROPTION% EQU 2 (
 	cls>nul
 	cls
 	Echo Procederemos a introducir la clave de edicion Datacenter.
-	pause
-	cscript //nologo slmgr /ipk WMDGN-G9PQG-XVVXX-R3X43-63DFG >nul&pause
+	slmgr /ipk WMDGN-G9PQG-XVVXX-R3X43-63DFG
 	goto :ACTIVATION
 :MENUSTANDARD
 	cls>nul
 	cls
 	Echo Procederemos a introducir la clave de edicion Standard.
-	pause
-	cscript //nologo slmgr /ipk N69G4-B89J2-4G8F4-WWYCC-J464C >nul&pause
+	slmgr /ipk N69G4-B89J2-4G8F4-WWYCC-J464C
 	goto :ACTIVATION
 :MENUESSENTIALS
 	cls>nul
 	cls
 	Echo Procederemos a introducir la clave de edicion Essentials.
-	pause
-	cscript //nologo slmgr /ipk WVDHN-86M7X-466P6-VHXV7-YY726 >nul&pause
+	slmgr /ipk WVDHN-86M7X-466P6-VHXV7-YY726
 	goto :ACTIVATION
 ::Apartir de esta parte comienza el menu de Office 2019
 :OFFICE2019
@@ -401,20 +398,23 @@ cls>nul
 	SET SERVID=%ERRORLEVEL%
 	IF %SERVID% EQU 1 (
 	Echo Procederemos a introducir el servidor kms7.msguides.com.
-	cscript //nologo slmgr /skms kms7.msguides.com> nul&echo ============================================================================&echo.&echo.
-	pause
+	::cscript //nologo slmgr /skms kms7.msguides.com> nul&echo ============================================================================&echo.&echo.
+	slmgr /skms kms7.msguides.com
+	echo ============================================================================&echo.&echo.
 	slmgr /ato
 	goto :ACTIVATIONWINDOWS
 		)
 	IF %SERVID% EQU 2 (
 	Echo Procederemos a introducir el servidor kms8.msguides.com.
-	cscript //nologo slmgr /skms kms8.msguides.com >nul&echo ============================================================================&echo.&echo.
+	slmgr /skms kms8.msguides.com
+	echo ============================================================================&echo.&echo.
 	slmgr /ato
 	goto :ACTIVATIONWINDOWS
 	)
 	IF %SERVID% EQU 3 (
 	Echo Procederemos a introducir el servidor kms9.msguides.com.
-	cscript //nologo slmgr /skms kms9.msguides.com >nul&echo ============================================================================&echo.&echo.
+	slmgr /skms kms9.msguides.com
+	echo ============================================================================&echo.&echo.
 	slmgr /ato
 	goto :ACTIVATIONWINDOWS
 	)
